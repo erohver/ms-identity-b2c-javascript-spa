@@ -3,18 +3,24 @@
  * To learn more about user flows, visit: https://docs.microsoft.com/en-us/azure/active-directory-b2c/user-flow-overview
  * To learn more about custom policies, visit: https://docs.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-overview
  */
-const b2cPolicies = {
+ const b2cPolicies = {
     names: {
-        signUpSignIn: "B2C_1_susi_reset_v2",
-        editProfile: "B2C_1_edit_profile_v2"
+        signUpSignIn: "B2C_1_SUSI",
+        forgotPassword: "B2C_1_reset_password",
+        editProfile: "B2C_1_edit_profile"
     },
     authorities: {
         signUpSignIn: {
-            authority: "https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/B2C_1_susi_reset_v2",
+            authority: "https://atriohppartnersb2c.b2clogin.com/atriohppartnersb2c.onmicrosoft.com/B2C_1_SUSI",
+        },
+        forgotPassword: {
+            authority: "https://atriohppartnersb2c.b2clogin.com/atriohppartnersb2c.onmicrosoft.com/B2C_1_reset_password",
         },
         editProfile: {
-            authority: "https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/B2C_1_edit_profile_v2"
+            authority: "https://atriohppartnersb2c.b2clogin.com/atriohppartnersb2c.onmicrosoft.com/B2C_1_edit_profile"
         }
     },
-    authorityDomain: "fabrikamb2c.b2clogin.com"
+    authorityDomain: "atriohppartnersb2c.b2clogin.com"
+
+  
 }
